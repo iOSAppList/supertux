@@ -23,6 +23,7 @@
 #include <physfs.h>
 #include <sstream>
 #include <stdexcept>
+#include <array>
 
 #include "util/log.hpp"
 #include "version.h"
@@ -111,8 +112,8 @@ public:
       curl_easy_setopt(m_handle, CURLOPT_FOLLOWLOCATION, 1);
 
       curl_easy_setopt(m_handle, CURLOPT_NOPROGRESS, 0);
-      curl_easy_setopt(m_handle, CURLOPT_XFERINFODATA, this);
-      curl_easy_setopt(m_handle, CURLOPT_XFERINFOFUNCTION, &Transfer::on_progress_wrap);
+//      curl_easy_setopt(m_handle, CURLOPT_XFERINFODATA, this);
+//      curl_easy_setopt(m_handle, CURLOPT_XFERINFOFUNCTION, &Transfer::on_progress_wrap);
     }
   }
 
