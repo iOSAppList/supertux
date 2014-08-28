@@ -34,7 +34,12 @@
 #  include <glbinding/ContextInfo.h>
 #  include <glbinding/gl/extension.h>
 #  include <glbinding/callbacks.h>
+#elif defined(TARGET_OS_IPHONE)
+#include <OpenGLES/ES1/gl.h>
+#include <OpenGLES/ES1/glext.h>
+
 #endif
+
 
 #define LIGHTMAP_DIV 5
 

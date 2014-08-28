@@ -20,6 +20,8 @@
 #ifdef USE_GLBINDING
   #include <glbinding/ContextInfo.h>
 #endif
+#include <OpenGLES/ES2/gl.h>
+#include <OpenGLES/ES2/glext.h>
 
 namespace {
 
@@ -89,7 +91,7 @@ GLTexture::GLTexture(SDL_Surface* image) :
     m_texture_height = image->h;
   }
 #  else
-  if (GLEW_ARB_texture_non_power_of_two)
+  if (true)//GLEW_ARB_texture_non_power_of_two)
   {
     m_texture_width  = image->w;
     m_texture_height = image->h;

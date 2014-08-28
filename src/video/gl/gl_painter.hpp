@@ -20,8 +20,14 @@
 #ifdef USE_GLBINDING
 #include <glbinding/gl/gl.h>
 using namespace gl;
+
 #else
-#include <GL/glew.h>
+//#include <GL/glew.h>
+
+//#if defined(TARGET_OS_IPHONE)
+#include <OpenGLES/ES1/gl.h>
+#include <OpenGLES/ES1/glext.h>
+//#endif
 
 #include "SDL_opengl.h"
 #endif

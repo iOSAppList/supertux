@@ -16,6 +16,11 @@
 
 #include "video/gl/gl_lightmap.hpp"
 
+#if defined(TARGET_OS_IPHONE)
+#include <OpenGLES/ES1/gl.h>
+#include <OpenGLES/ES1/glext.h>
+#endif
+
 #include <SDL_image.h>
 #include <algorithm>
 #include <assert.h>

@@ -32,22 +32,28 @@ using namespace gl;
 
 #else
 
-#ifndef GL_VERSION_ES_CM_1_0
-#  include <GL/glew.h>
+//#ifndef GL_VERSION_ES_CM_1_0
+//#  include <GL/glew.h>
+//#endif
+
+//#if defined(MACOSX)
+//#  include <OpenGL/gl.h>
+//#  include <OpenGL/glext.h>
+//#elif defined(GL_VERSION_ES_CM_1_0)
+//#  include <GLES/gl.h>
+//#  include <GLES/glext.h>
+//#elif defined(TARGET_OS_IPHONE)
+//#include <OpenGLES/ES2/gl.h>
+//#include <OpenGLES/ES2/glext.h>
+//#else
+//#  include <GL/gl.h>
+//#  include <GL/glext.h>
+//#endif
+
 #endif
 
-#if defined(MACOSX)
-#  include <OpenGL/gl.h>
-#  include <OpenGL/glext.h>
-#elif defined(GL_VERSION_ES_CM_1_0)
-#  include <GLES/gl.h>
-#  include <GLES/glext.h>
-#else
-#  include <GL/gl.h>
-#  include <GL/glext.h>
-#endif
-
-#endif
+#include <OpenGLES/ES1/gl.h>
+#include <OpenGLES/ES1/glext.h>
 
 static inline void check_gl_error(const char* message)
 {
@@ -67,12 +73,12 @@ static inline void check_gl_error(const char* message)
         msg << "INVALID_OPERATION: The specified operation is not allowed "
           "in the current state.";
         break;
-      case GL_STACK_OVERFLOW:
-        msg << "STACK_OVERFLOW: This command would cause a stack overflow.";
-        break;
-      case GL_STACK_UNDERFLOW:
-        msg << "STACK_UNDERFLOW: This command would cause a stack underflow.";
-        break;
+//      case GL_STACK_OVERFLOW:
+//        msg << "STACK_OVERFLOW: This command would cause a stack overflow.";
+//        break;
+//      case GL_STACK_UNDERFLOW:
+//        msg << "STACK_UNDERFLOW: This command would cause a stack underflow.";
+//        break;
       case GL_OUT_OF_MEMORY:
         msg << "OUT_OF_MEMORY: There is not enough memory left to execute the "
           "command.";

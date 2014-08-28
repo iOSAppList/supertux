@@ -21,9 +21,12 @@
 #include <memory>
 #include <string>
 #include <vector>
+//
+//#include <al.h>
+//#include <alc.h>
 
-#include <al.h>
-#include <alc.h>
+#include <openal/al.h>
+#include <openal/alc.h>
 
 #include "math/vector.hpp"
 #include "util/currenton.hpp"
