@@ -7,7 +7,7 @@
 
 /* #undef ENABLE_BINRELOC */
 #define INSTALL_SUBDIR_BIN "SuperTux.app/Contents/MacOS"
-#define INSTALL_SUBDIR_SHARE "SuperTux.app/Contents/Resources/data"
+#define INSTALL_SUBDIR_SHARE ""
 
 #define SIZEOF_VOID_P 8
 #if SIZEOF_VOID_P == 8
