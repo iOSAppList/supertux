@@ -10,6 +10,7 @@
 #define SCREEN_WIDTH 320
 #define SCREEN_HEIGHT 480
 
+// http://www.cppblog.com/longjun-9/articles/202243.html, 编译 arm7s
 int
 randomInt(int min, int max)
 {
