@@ -127,6 +127,7 @@ The SuperTux development team
 
 
 By Andrew Yang
+--------------
 
 In this repository, i tried to compile it for iOS, and success. you can check out the SDL branch and have a try, the SDL should contains all dependencies except the boost for iOS, you can compile the boost for iOS yourself.
 
@@ -142,4 +143,6 @@ https://github.com/manifest/sdl-ios-templates, SDL template for xcode
 build SuperTux on Mac 
 
 http://x2on.de/2012/01/28/tutorial-building-supertux-0-3-3-on-mac-os-x-lion/
+
+If you see a black screen, please check those resources in the app.
 
