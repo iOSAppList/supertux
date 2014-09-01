@@ -123,3 +123,23 @@ The End
 Thanks for trying out SuperTux.
 
 The SuperTux development team
+
+
+
+By Andrew Yang
+
+In this repository, i tried to compile it for iOS, and success. you can check out the SDL branch and have a try, the SDL should contains all dependencies except the boost for iOS, you can compile the boost for iOS yourself.
+
+Below are some helpful links which i used to compile it for iOS:
+compile supertux for iOS
+http://blog.csdn.net/devday/article/details/8575258, Physfs iOS framework, 中国人编译的
+https://github.com/mgrebenets/boost-xcode5-iosx, boost iOS, how to build, 不会用
+https://github.com/wuhao5/boost,一次编译通过
+http://www.cnblogs.com/cppguru/archive/2012/06/23/2559303.html, 编译libCurl for iOS,中文，相当复杂
+http://seiryu.home.comcast.net/~seiryu/libcurl-ios.html, 有人直接编译好了
+http://iosdeveloperzone.com/2012/08/07/precompiled-ogg-vorbis-libraries-for-ios/, precompiled vorbis for iOS.
+https://github.com/manifest/sdl-ios-templates, SDL template for xcode
+build SuperTux on Mac 
+
+http://x2on.de/2012/01/28/tutorial-building-supertux-0-3-3-on-mac-os-x-lion/
+
